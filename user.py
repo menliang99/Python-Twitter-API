@@ -15,7 +15,7 @@ class User:
         self.id = id
 
     def __repr__(self):
-        return "<User {}>".format(self.email)
+        return "<User {}>".format(self.screen_name)
 
     def save_to_db(self):
         with CursorFromConnectionFromPool() as cursor:
